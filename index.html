@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/woman.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Portfolio</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Abhilasha Tugave.</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#Project">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Abhilasha Tugave.</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon open" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links open">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
+                <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="Assets/profile(croped).png" alt="profile pic" class="profile-pic">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello I'm</p>
+            <h1 class="title">Abhilasha Tugave</h1>
+            <p class="section_text_p2">Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Assets/Abhilasha_Tugave(resume).pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#Contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <!-- <img src="./Assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://in.linkedin.com/' "> -->
+                 <!-- <img src="./Assets/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/abhilasha-tugave' "> -->
+                <i class="fa-brands fa-linkedin icon" onclick="location.href='https://in.linkedin.com/' "></i>
+                <i class="fa-brands fa-github icon" onclick="location.href='https://github.com/abhilasha-tugave' "></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section_text_p1">Get to know more</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <!-- <img src="./Assets/education.png" alt="education icon" class="icon"> -->
+                         <i class="fa-solid fa-graduation-cap icon"></i>
+                        <h2>Education</h2>
+                        <div class="education-list">
+                            <div class="list">
+                                <h4>B.E. in Electronics & telecommunication <span class="year">(2022-2026 )</span></h4>
+                                <p>Jayawantrao Sawant College of Engineering, Hadapsar, Pune.</p>
+                                <p style="font-weight: bold;">CGPA: 8.67/10.0</p>
+                            </div>
+                            <div class="list">
+                                <h4>Higher Secondary Certificate <span class="year">(2020-2022)</span></h4>
+                                <p>Abhinav Jyan Mandir Jr. college of Science, commerce & arts, Karjat.</p>
+                            </div>
+                            <div class="list">
+                                <h4>Secondary School Certificate <span class="year">(2020)</span></h4>
+                                <p>Abhinav Jyan Mandir Prashala Karjat, Raigad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>" I am an enthusiastic and quick-learning final-year Electronics and Telecommunication Engineering student with a solid foundation in HTML, CSS, JavaScript, Java, Git, and GitHub. I am currently exploring the MERN stack to build strong full-stack development skills. Passionate about technology and coding, I am actively seeking real-time project opportunities or internships to apply my knowledge, gain hands-on skill, and grow both technically and professionally in a collaborative environment. "</p>
+                </div>
+            </div>
+        </div>
+        <!-- <img src="./Assets/arrow.png" alt="arrow icon" class="icon arrow-up" onclick="location.href='./#desktop-nav'"/> -->
+        <!-- <img src="./Assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#skill'"/> -->
+        <i class="fa-solid fa-angles-down icon arrow-up" onclick="location.href='./#desktop-nav'"></i>
+        <i class="fa-solid fa-angles-down icon arrow" onclick="location.href='./#skill'"></i>
+    </section>
+
+    <section id="skill">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skill-details-container">
+            <div class="about-container">
+                <div class="details-containers">
+                    <h2 class="skill-sub-title">Frontend development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h1>HTML</h1>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h1>CSS</h1>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h1>JavaScript</h1>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h1>Git & GitHub</h1>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h1>Netlify</h1>
+                                <p>Proficient </p>
+                            </div>
+                        </article> 
+                    </div>
+                </div>
+                <div class="details-containers">
+                    <h2 class="skill-sub-title">Backend development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h1>Java</h1>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h1>SQL</h1>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h1>Git</h1>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <img src="./Assets/arrow.png" alt="arrow icon" class="icon arrow-up" onclick="location.href='./#desktop-nav'"/>
+        <img src="./Assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#Project'"/> -->
+        <i class="fa-solid fa-angles-down icon arrow-up" onclick="location.href='./#desktop-nav'"></i>
+        <i class="fa-solid fa-angles-down icon arrow" onclick="location.href='./#Project'"></i>
+    </section>
+
+    <section id="Project">
+        <p class="section_text_p1">Brouse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skill-details-container">
+            <div class="about-container">
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <!-- <img src="./Assets/project-1.png" alt="project-1" class="project-1"> -->
+                        <div class="project-1">Project-1</div>
+                    </div>
+                    <h2 class="skill-sub-title project-title">Portfolio</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <!-- <img src="./Assets/project-1.png" alt="project-1" class="project-1"> -->
+                        <div class="project-1">Project-2</div>
+                    </div>
+                    <h2 class="skill-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <!-- <img src="./Assets/project-1.png" alt="project-1" class="project-1"> -->
+                        <div class="project-1">Project-2</div>
+                    </div>
+                    <h2 class="skill-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <img src="./Assets/arrow.png" alt="arrow icon" class="icon arrow-up" onclick="location.href='./#desktop-nav'"/>
+        <img src="./Assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#Contact'"/> -->
+        <i class="fa-solid fa-angles-down icon arrow-up" onclick="location.href='./#desktop-nav'"></i>
+        <i class="fa-solid fa-angles-down icon arrow" onclick="location.href='./#Contact'"></i>
+    </section>
+
+    <section id="Contact">
+        <p class="section_text_p1">Get In Touch</p>
+        <h3 class="title">Contact Me</h3>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./Assets/email.png" alt="email icon" class="icon contact-icon" onclick="location.href='mailto:tugaveabhilasha9560@gmail.com'">
+                <p><a href="mailto:tugaveabhilasha9560@gmail.com">Email</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./Assets/linkedin.png" alt="linkedin icon" class="icon linkedin-icon" onclick="location.href='https://www.linkedin.com'">
+                <p><a href="https://www.linkedin.com">Linkedin</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#Project">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Abhilasha Tugave. All rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
